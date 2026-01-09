@@ -1,23 +1,13 @@
 # RAG FAQ System - n8n Workflow
 
+![architecture.jpg](architecture.jpg.jpg)
+
 A Retrieval-Augmented Generation (RAG) system built with n8n that automatically processes documents from Google Drive and provides an AI-powered chat interface for answering questions.
-
-## Overview
-
-This workflow consists of two main flows:
+ 
+our workflow consists of two main flows:
 
 1. **Document Ingestion**: Monitors Google Drive folder for new files, processes them, and stores embeddings in Pinecone
 2. **Chat Interface**: Provides an AI agent that can answer questions using the stored documents
-
-## Architecture
-
-```
-[Google Drive] → [Download] → [Embed] → [Pinecone (Insert)]
-                                             ↓
-[Chat Trigger] → [AI Agent] ← [Pinecone (Retrieve)] ← [Query Embed]
-                      ↓
-              [Google Gemini LLM]
-```
  
 ## Required Credentials
 
