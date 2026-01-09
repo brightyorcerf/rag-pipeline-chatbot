@@ -1,6 +1,6 @@
 # RAG FAQ System - n8n Workflow
 
-![architecture.jpg](architecture.jpg.jpg)
+![architecture.jpg](architecture.jpg)
 
 A Retrieval-Augmented Generation (RAG) system built with n8n that automatically processes documents from Google Drive and provides an AI-powered chat interface for answering questions.
  
